@@ -22,6 +22,10 @@ pd.options.display.float_format = '${:,.2f}'.format
 
 today = datetime.today().strftime('%Y-%m-%d')
 start_date = '2010-01-01'
+"""
+change ADA to any crypto abbreviation that being served by yfinance
+source can be seen from https://finance.yahoo.com/cryptocurrencies
+"""
 ada_df = yf.download('ADA-USD',start_date, today)
 ada_df.tail()
 
